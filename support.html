@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Поддержка — Синхронизируй</title>
+<title>Поддержка — Синхронизируй / Support — Synchronize</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,39 +16,117 @@
 </div>
 
 <main class="page">
-  <a class="mark" href="https://hashandjoy.com" aria-label="Hash and Joy">
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-      <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.4"/>
-      <circle cx="10" cy="10" r="3.2" fill="currentColor"/>
-    </svg>
-    Hash and Joy
-  </a>
 
-  <h1>Поддержка</h1>
-  <p class="lede">Мы рады помочь. Если что-то в приложении «Синхронизируй» работает не так, как ожидалось, или просто есть вопрос — напишите нам.</p>
-
-  <section>
-    <h2>Пропал звук или музыка</h2>
-    <p>Проверьте, что звук включён и в самом приложении, и на устройстве, и что телефон не находится в бесшумном режиме или режиме «Не беспокоить».</p>
-  </section>
-
-  <section>
-    <h2>Приложение тормозит или зависает</h2>
-    <p>Попробуйте перезапустить приложение. Если это не помогает, напишите нам модель устройства и версию iOS — так мы быстрее разберёмся, особенно если дело в конкретном уровне игры.</p>
-  </section>
-
-  <section>
-    <h2>Нашли ошибку или есть идея</h2>
-    <p>Опишите, что произошло и в какой игре или на каком уровне — чем подробнее, тем быстрее мы сможем это воспроизвести и исправить.</p>
-  </section>
-
-  <div class="contact-card">
-    <p class="label">Написать нам</p>
-    <p class="email"><a href="mailto:admin@hashandjoy.com">admin@hashandjoy.com</a></p>
+  <div class="brand">
+    <img src="logo.png" alt="Синхронизируй">
+    <div>
+      <div class="brand-name">Синхронизируй</div>
+      <a class="brand-by" href="https://hashandjoy.com">Hash and Joy</a>
+    </div>
   </div>
 
-  <p class="foot">Отвечаем в течение нескольких рабочих дней.<br>«Синхронизируй» разработан Hash and Joy, LLC.</p>
+  <div class="lang-switch" role="tablist">
+    <button class="lang-tab is-active" id="tab-ru" onclick="setLang('ru')">RU</button>
+    <button class="lang-tab" id="tab-en" onclick="setLang('en')">EN</button>
+  </div>
+
+  <!-- ===================== RU ===================== -->
+  <div id="lang-ru">
+    <h1>Поддержка</h1>
+    <p class="lede">Мы рады помочь. Если что-то в приложении «Синхронизируй» работает не так, как ожидалось, или просто есть вопрос — напишите нам.</p>
+
+    <h2>Как играть</h2>
+    <div class="game-grid">
+      <div class="game-item"><strong>Маятники</strong><p>Нажимайте на маятники, чтобы поставить их на паузу, и подберите момент, когда все окажутся в одной фазе.</p></div>
+      <div class="game-item"><strong>Бабочки</strong><p>Останавливайте бабочек касанием, чтобы все летели синхронно.</p></div>
+      <div class="game-item"><strong>Пирамида</strong><p>Наклоняйте телефон, чтобы удержать стопку посуды в равновесии.</p></div>
+      <div class="game-item"><strong>Шары</strong><p>Синхронизируйте движение шаров; на сложном уровне ещё и разворачивайте контейнеры.</p></div>
+      <div class="game-item"><strong>Фигуры</strong><p>Останавливайте фигурки в танце, чтобы все оказались в одной позе.</p></div>
+      <div class="game-item"><strong>Капли</strong><p>Нажимайте на кран в такт, чтобы капли падали синхронно с образцом.</p></div>
+      <div class="game-item"><strong>Темп</strong><p>Ведите точку по маршруту равномерно, чтобы дойти до финиша ровно вовремя.</p></div>
+      <div class="game-item"><strong>Меткость</strong><p>Смахивайте вверх, чтобы запускать снаряды по падающим фигурам нужной формы.</p></div>
+      <div class="game-item"><strong>Дыхание</strong><p>Выберите технику и дышите в такт кругу, контуру или удержанию.</p></div>
+      <div class="game-item"><strong>Позитив</strong><p>Найдите нужное лицо — улыбку, эмоцию или все положительные — как можно быстрее.</p></div>
+    </div>
+
+    <h2>Частые вопросы</h2>
+    <section>
+      <h2>Пропал звук или музыка</h2>
+      <p>Проверьте, что звук включён и в самом приложении, и на устройстве, и что телефон не находится в бесшумном режиме или режиме «Не беспокоить».</p>
+    </section>
+
+    <section>
+      <h2>Приложение тормозит или зависает</h2>
+      <p>Попробуйте перезапустить приложение. Если это не помогает, напишите нам модель устройства и версию iOS — так мы быстрее разберёмся, особенно если дело в конкретном уровне игры.</p>
+    </section>
+
+    <section>
+      <h2>Нашли ошибку или есть идея</h2>
+      <p>Опишите, что произошло и в какой игре или на каком уровне — чем подробнее, тем быстрее мы сможем это воспроизвести и исправить.</p>
+    </section>
+
+    <div class="contact-card">
+      <p class="label">Написать нам</p>
+      <p class="email"><a href="mailto:admin@hashandjoy.com">admin@hashandjoy.com</a></p>
+    </div>
+
+    <p class="foot">Отвечаем в течение нескольких рабочих дней.<br>«Синхронизируй» разработан Hash and Joy, LLC.</p>
+  </div>
+
+  <!-- ===================== EN ===================== -->
+  <div id="lang-en" hidden>
+    <h1>Support</h1>
+    <p class="lede">We're happy to help. If something in Synchronize isn't working as expected, or you just have a question — write to us.</p>
+
+    <h2>How to play</h2>
+    <div class="game-grid">
+      <div class="game-item"><strong>Metronomes</strong><p>Tap the pendulums to pause them and time it so they all line up in the same phase.</p></div>
+      <div class="game-item"><strong>Butterflies</strong><p>Tap butterflies to pause them so they all fly in sync.</p></div>
+      <div class="game-item"><strong>Stack</strong><p>Tilt your phone to keep the stacked dishes balanced.</p></div>
+      <div class="game-item"><strong>Balls</strong><p>Sync the balls' motion; on hard, rotate the containers too.</p></div>
+      <div class="game-item"><strong>Figures</strong><p>Pause the dancing figures so they all land on the same pose.</p></div>
+      <div class="game-item"><strong>Drops</strong><p>Tap the tap in rhythm so drops fall in sync with the reference.</p></div>
+      <div class="game-item"><strong>Pace</strong><p>Drag the dot along the path at a steady speed to finish exactly on time.</p></div>
+      <div class="game-item"><strong>Aim</strong><p>Swipe up to launch shots at the falling shapes of the matching type.</p></div>
+      <div class="game-item"><strong>Breathing</strong><p>Pick a technique and breathe along with the circle, the outline, or a press-and-hold.</p></div>
+      <div class="game-item"><strong>Positive</strong><p>Find the right face — a smile, an emotion, or all the positive ones — as fast as you can.</p></div>
+    </div>
+
+    <h2>FAQ</h2>
+    <section>
+      <h2>No sound or music</h2>
+      <p>Check that sound is on both in the app and on your device, and that your phone isn't in silent or Do Not Disturb mode.</p>
+    </section>
+
+    <section>
+      <h2>The app is slow or freezes</h2>
+      <p>Try restarting the app. If that doesn't help, tell us your device model and iOS version — it helps us track down the issue faster, especially if it's tied to a specific level.</p>
+    </section>
+
+    <section>
+      <h2>Found a bug or have an idea</h2>
+      <p>Describe what happened and which game or level it was on — the more detail, the faster we can reproduce and fix it.</p>
+    </section>
+
+    <div class="contact-card">
+      <p class="label">Contact us</p>
+      <p class="email"><a href="mailto:admin@hashandjoy.com">admin@hashandjoy.com</a></p>
+    </div>
+
+    <p class="foot">We reply within a few business days.<br>Synchronize is made by Hash and Joy, LLC.</p>
+  </div>
+
 </main>
+
+<script>
+function setLang(lang) {
+  document.getElementById('lang-ru').hidden = lang !== 'ru';
+  document.getElementById('lang-en').hidden = lang !== 'en';
+  document.getElementById('tab-ru').classList.toggle('is-active', lang === 'ru');
+  document.getElementById('tab-en').classList.toggle('is-active', lang === 'en');
+  document.documentElement.lang = lang;
+}
+</script>
 
 </body>
 </html>
